@@ -5,7 +5,7 @@ sources:
     database: DEMO
     schema: PUBLIC
     tables:
-      - name: customer_demo
+      - name: "customer_demo"
         description: "Customer demo table"
 
 models:
