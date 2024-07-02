@@ -6,6 +6,7 @@ sources:
     schema: PUBLIC
     tables:
       - name: customer_demo
+        identifier: customer_demo 
         description: "Customer demo table"
 
 models:
