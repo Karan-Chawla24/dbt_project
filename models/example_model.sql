@@ -1,10 +1,4 @@
--- models/example_model.sql
-
-select 
-    City,
-    First_Name,
-    Last_Name,
-    Email,
-from 
-    {{ ref('customer_demo') }}
-
+with customer_demo_cte as (
+    select * from {{ source('customer_data', 'customer_demo') }}
+)
+select * from customer_demo_cte

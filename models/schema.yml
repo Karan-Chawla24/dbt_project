@@ -1,5 +1,13 @@
 version: 2
 
+sources:
+  - name: customer_data
+    database: DEMO
+    schema: PUBLIC
+    tables:
+      - name: customer_demo
+        description: "Customer demo table"
+
 models:
   - name: example_model
     description: "An example model"
